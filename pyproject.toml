@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "python-starter"
+version = "0.1.0"
+description = ""
+authors = ["mouad ettali <mettali@ekinox.io>"]
+readme = "README.md"
+packages = [ "src" ]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pyhamcrest = "^2.1.0"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = [
+    "tests",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "main:main"
