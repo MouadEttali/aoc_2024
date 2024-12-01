@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "python-starter"
+name = "python-aoc-starter"
 version = "0.1.0"
 description = ""
 authors = ["mouad ettali <mettali@ekinox.io>"]
 readme = "README.md"
-packages = [ "src" ]
+packages = [{ include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
